@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        .box {
+            background-color: rgb(103, 34, 103);
+            border-radius: 10px;
+            padding: 10px 20px;
+           color: rgb(219, 207, 207);
+        }
+        .items {
+            display: flex;
+          flex-wrap: wrap;
+        }
+        .item {
+            background-color: aqua;
+            border: 1px solid gray;
+            height: 60px;
+            width: 100px;
+        }
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, eius ut dicta qui aut laboriosam voluptas debitis cupiditate sed nobis fugit iure aperiam veniam quos sint vitae temporibus! Rerum, ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum inventore omnis assumenda temporibus, est, soluta explicabo odio dolorem itaque eveniet eum debitis molestiae unde voluptas dolor sapiente ipsa, asperiores maxime?</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aperiam fugiat quaerat voluptatem beatae, nihil a. Voluptatum sequi doloribus similique quas fuga voluptatem odit, mollitia illum cupiditate. Officiis, nemo consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum inventore omnis assumenda temporibus, est, soluta explicabo odio dolorem itaque eveniet eum debitis molestiae unde voluptas dolor sapiente ipsa, asperiores maxime?</p>
+        </div>
+    </div>
+    <div class="items">
+        <div class="item">Item -1</div>
+        <div class="item">Item -2</div>
+        <div class="item">Item -3</div>
+        <div class="item">Item -4</div>
+        <div class="item">Item -5</div>
+        <div class="item">Item -6</div>
+        <div class="item">Item -7</div>
+        <div class="item">Item -8</div>
+        <div class="item">Item -9</div>
+        <div class="item">Item -10</div>
+        <div class="item">Item -11</div>
+        <div class="item">Item -12</div>
+        <div class="item">Item -13</div>
+        <div class="item">Item -14</div>
+        <div class="item">Item -15</div>
+        <div class="item">Item -16</div>
+        <div class="item">Item -17</div>
+        <div class="item">Item -18</div>
+        <div class="item">Item -19</div>
+        <div class="item">Item -20</div>
+
+    </div>
+</body>
+</html>

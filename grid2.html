@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .header, .nav, .main, .sidebar, .advertise, .footer {
+            background-color: darksalmon;
+            border-radius: 10px;
+            border: 2px solid rgb(0, 128, 92);
+            padding: 5px;
+        }
+ 
+        .header {
+            grid-area: header; 
+        }
+        .nav {
+            grid-area: nav; 
+        }
+        .main {
+            grid-area: main; 
+        }
+        .sidebar {
+            grid-area: sidebar; 
+        }
+        .advertise {
+            grid-area: advertise; 
+        }
+        .footer {
+            grid-area: footer; 
+        }
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "header  header  header  header"
+            "nav     main    main    sidebar"
+            "nav     main    main    advertise"
+            "footer  footer  footer  footer"
+            ;
+        }
+        
+           
+
+        
+        @media screen and (max-width: 576px) {
+           .container {
+            grid-template-areas:  
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "advertise"
+            "footer"
+            ;
+           }
+            
+        }
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container {
+                grid-template-areas:  
+                "header    header"
+                "nav       nav"
+                "sidebar   main"
+                "advertise footer"
+                ;
+            }
+            
+        }
+ 
+
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h3 >The Header</h3>
+       
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">nav 1</a></li>
+            <li><a href="">nav 2</a></li>
+            <li><a href="">nav 3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>The Article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt numquam officiis magni ab est vero sapiente perferendis consequatur cum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, nihil voluptatum? Animi quas nam vel reiciendis quos inventore sunt laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error vel sint voluptatem nisi commodi velit accusamus culpa, expedita dignissimos. Neque, necessitatibus alias. Quis perspiciatis nesciunt, quo iusto accusantium mollitia.
+            Dignissimos ducimus, expedita autem omnis repudiandae quam alias veniam numquam ex provident, mollitia voluptas enim! Rerum nulla aperiam odit exercitationem molestiae. Minima eaque velit culpa adipisci iste perspiciatis iusto odit.
+            Facilis, quibusdam tempore beatae perspiciatis eaque iusto iste dolorum asperiores aliquid nam vel est assumenda mollitia eius consequatur velit voluptatum at eligendi fugiat doloremque cupiditate commodi animi. Soluta, aliquam explicabo?</p>
+        </article>
+    </main>
+    
+        <div class="sidebar">Sidebar</div>
+        <div class="advertise">Advertise</div>
+    
+    <footer class="footer">
+        <h3>The Footer</h3>
+    </footer>
+    
+</body>
+</html>

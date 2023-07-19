@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,150px) 30px 30px;
+            gap: 20px;
+
+        }
+        .box {
+            background-color: cadetblue;
+            border-radius: 8px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+           
+        }
+        #box-11, #box-12 {
+            grid-column: span 3;
+           
+        }
+
+        #box-1 {
+            grid-row: span 5;
+           
+
+        }
+        #box-6, #box-7, #box-9, #box-10 {
+            background-color: rgb(180, 90, 120);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .container>.box#box-${Item-$} -->
+    <div class="container">
+        <div class="box" id="box-1">Item-1</div>
+        <div class="box" id="box-2">Item-2</div>
+        <div class="box" id="box-3">Item-3</div>
+        <div class="box" id="box-4">Item-4</div>
+        <div class="box" id="box-5">Item-5</div>
+        <div class="box" id="box-6">Item-6</div>
+        <div class="box" id="box-7">Item-7</div>
+        <div class="box" id="box-8">Item-8</div>
+        <div class="box" id="box-9">Item-9</div>
+        <div class="box" id="box-10">Item-10</div>
+        <div class="box" id="box-11">Item-11</div>
+        <div class="box" id="box-12">Item-12</div>
+    </div>
+</body>
+</html>
